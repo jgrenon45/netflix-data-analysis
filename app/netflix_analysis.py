@@ -39,8 +39,7 @@ st.write("\nDonnées nettoyées, doublons supprimés.")
 # %% ../project.ipynb 4
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 from streamlit_jupyter import StreamlitPatcher, tqdm
 
 StreamlitPatcher().jupyter()
@@ -125,11 +124,14 @@ st.dataframe(
     }
 )
 
-
-
 # %% ../project.ipynb 6
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from streamlit_jupyter import StreamlitPatcher, tqdm
 
-
+StreamlitPatcher().jupyter()
 
 st.header("Analyse temporelle")
 
@@ -263,6 +265,7 @@ st.pyplot(fig)
 
 
 
+# %% ../project.ipynb 10
 st.header("Synthèse")
 
 st.markdown("""
