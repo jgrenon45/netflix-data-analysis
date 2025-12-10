@@ -109,6 +109,7 @@ st.dataframe(
         "count": "Nombre d'apparitions",
     }
 )
+st.bar_chart(actor_counts)
 
 # Afficher les 10 réalisateurs les plus fréquents
 st.subheader("Les réalisateurs les plus fréquents :")
@@ -123,6 +124,7 @@ st.dataframe(
         "count": "Nombre de réalisations",
     }
 )
+st.bar_chart(director_counts)
 
 # %% ../project.ipynb 6
 import streamlit as st
@@ -265,7 +267,7 @@ st.pyplot(fig)
 
 
 
-# %% ../project.ipynb 10
+# %% ../project.ipynb 9
 st.header("Synthèse")
 
 st.markdown("""
